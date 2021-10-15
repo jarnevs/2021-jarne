@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $primary-font;
+  line-height: 1.5;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+.content-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title-page {
+  overflow: hidden;
+  position: relative;
+  height: 250px;
+  background: $blue-dark;
+
+  & > h1 {
+    position: absolute;
+    left: 50%;
+    bottom: -100px;
+    transform: translateX(-50%);
+
+    color: $white-transparent;
+  }
+}
+
+h1 {
+  font-size: 8.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.125rem;
+  color: $blue-dark;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .content-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-page {
+    h1 {
+      bottom: -70px;
+    }
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+}

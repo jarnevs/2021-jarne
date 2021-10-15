@@ -1,0 +1,49 @@
+.dropdown {
+  position: relative;
+  top: 0;
+  z-index: 2;
+  width: 250px;
+  border: 1px solid $grey-darker;
+  padding: 10px 20px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-weight: 700;
+      color: $grey-dark;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    position: absolute;
+    left: -1px;
+    background: $white;
+    width: 250px;
+    border: 1px solid $grey-darker;
+    border-top: 0;
+    padding: 20px;
+
+    button {
+      background: none;
+      border: none;
+    }
+  }
+
+  &:first-child {
+    z-index: 4;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown {
+    width: 100%;
+
+    &__list {
+      width: calc(100% + 2px);
+    }
+  }
+}

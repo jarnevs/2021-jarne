@@ -1,0 +1,27 @@
+// colors
+$white: #fff;
+$white-transparent: rgba(255, 255, 255, 0.2);
+$black: #011627;
+
+$grey-light: #e1e8e9;
+$grey-darker: #b5c5c9;
+$grey-darker-transparent: rgba(181, 197, 201, 0.4);
+$grey-dark: #495864;
+
+$green: #29f29b;
+$blue-light: #0ad3ff;
+$blue-dark: #024cff;
+
+// fonts
+$primary-font: "Gilory", sans-serif;
+
+// grid
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1320px,
+);
+
+$grid-gutter-width: 3rem;

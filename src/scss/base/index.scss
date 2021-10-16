@@ -5,14 +5,27 @@
   font-family: $primary-font;
 }
 
-body {
+html {
   overflow-x: hidden;
+}
+
+body {
   font-family: $primary-font;
   line-height: 1.5;
 }
 
 main {
   margin-bottom: 100px;
+}
+
+.app {
+  overflow-x: hidden;
+  width: 100%;
+
+  &.menu-open {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 .content-container {

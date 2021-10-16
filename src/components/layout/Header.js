@@ -6,8 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../images/logo.svg';
 import { NavLink } from '../';
 
-const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Header = ({ menuOpen, openMenu }) => {
 
   return (
     <header className="header">
@@ -17,12 +16,12 @@ const Header = () => {
             <a href="#"><img src={logo} alt="logo Kenniscentrum Data & Maatschappij"/></a>
           </div>
           <div className="col-8 offset-lg-1 col-lg-7">
-            <div className="hamburger-icon" onClick={() => setMenuOpen(!menuOpen)}>
-              <button  onClick={() => setMenuOpen(!menuOpen)}><FontAwesomeIcon icon={faBars} color="#FFF" size="lg" /></button>
+            <div className="hamburger-icon">
+              <button  onClick={() => openMenu()}><FontAwesomeIcon icon={faBars} color="#FFF" size="lg" /></button>
             </div>
             <div className={menuOpen ? 'nav-language nav-language--open' : 'nav-language'}>
               <div className="close-icon">
-                <button  onClick={() => setMenuOpen(!menuOpen)}><FontAwesomeIcon icon={faTimes} color="#FFF" size="lg" /></button>
+                <button  onClick={() => openMenu()}><FontAwesomeIcon icon={faTimes} color="#FFF" size="lg" /></button>
               </div>
               <nav className="main-nav">
                 <ul className="main-nav__list">

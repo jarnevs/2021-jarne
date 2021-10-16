@@ -1,7 +1,11 @@
+import React, { useState } from 'react';
+
 import { Header, Footer} from './components/layout';
 import { Card, Dropdown } from './components';
 
-function App() {
+const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const data = [
     {
       year: 2020,
@@ -83,9 +87,13 @@ function App() {
     },
   ]
 
+  const openMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
-    <div className="App">
-      <Header />
+    <div className={ menuOpen ? 'app menu-open' : 'app' }>
+      <Header menuOpen={menuOpen} openMenu={openMenu} />
       <main>
         <div className="title-page">
           <h1>Events</h1>

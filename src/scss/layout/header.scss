@@ -111,7 +111,7 @@ header {
     transition: transform 0.2s ease-in-out;
 
     &--open {
-      transform: translateX(0);
+      transform: translateX(0%);
     }
   }
 

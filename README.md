@@ -1,4 +1,4 @@
-**Github pages link:** [Events - Kenniscentrum Data & Maatschappij](https://jarnevs.github.io/2021-jarne/){:target="_blank"}
+**Github pages link: <a href="https://jarnevs.github.io/2021-jarne/" target="_blank">Events - Kenniscentrum Data & Maatschappij</a>** 
 
 # Getting Started with Create React App
 
